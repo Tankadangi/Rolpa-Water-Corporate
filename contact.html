@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Rolpa Water</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white">
+    <nav class="navbar scrolled">
+        <div class="logo">Rolpa Water</div>
+        <ul class="nav-links">
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="products.html" data-i18n="nav_products">Products</a></li>
+            <li><a href="about.html" data-i18n="nav_about">About</a></li>
+            <li><a href="about.html#team" data-i18n="nav_team">Team</a></li>
+            <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+            <li><a href="contact.html" class="btn-primary" data-i18n="nav_quote" style="padding: 0.6rem 1.5rem;">Get a Quote</a></li>
+            <li class="lang-switch" style="margin-left: 1rem; border-left: 1px solid #ccc; padding-left: 1rem;">
+                <a href="#" class="lang-btn" data-lang="en" style="text-decoration: none; color: inherit; font-weight: bold;">EN</a> |
+                <a href="#" class="lang-btn" data-lang="ne" style="text-decoration: none; color: inherit; opacity: 0.6;">ने</a>
+            </li>
+        </ul>
+    </nav>
+    <div style="height: 100px;"></div>
+
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-text scroll-animate">
+                    <h1 data-i18n="contact_heading" style="margin-bottom: 1.5rem;">Get in Touch</h1>
+                    <p style="font-size: 1.1rem; color: var(--text-muted); max-width: 400px;" data-i18n="contact_sub">Whether you're a household, business, or distributor — we'd love to hear from you.</p>
+                </div>
+                
+                <div class="contact-form scroll-animate delay-1">
+                    <form action="https://formspree.io/f/MAYBE_REPLACE_ME_LATER" method="POST" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" data-i18n="form_lbl_name">Your full name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email_phone" data-i18n="form_lbl_phone">PHONE / EMAIL</label>
+                            <!-- Note: data-i18n replaces innerHTML, so for placeholders we handles it via JS or simple text, but since we use span for translation, let's restructure slightly to support translation inside attributes if needed, BUT for simplicity we keep it standard and text translations near labels -->
+                            <input type="text" id="email_phone" name="_replyto" placeholder="Phone number or email address" required>
+                            <!-- The placeholder is not strictly translated automatically by our script unless we add special support. For now, the label provides clear enough guidance in Nepali -->
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-i18n="form_lbl_msg">MESSAGE</label>
+                            <textarea id="message" name="message" placeholder="How can we help you?" lines="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary w-100" style="width: 100%; border-radius: 8px; padding: 1.25rem;" data-i18n="form_btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advanced Footer -->
+    <footer class="footer-dark">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Col 1 -->
+                <div class="footer-col">
+                    <div class="footer-logo">💧 Rolpa Water</div>
+                    <p class="footer-slogan" data-i18n="footer_slogan">Pure Water. Pure Trust. www.rolpawater.com</p>
+                </div>
+                <!-- Col 2 -->
+                <div class="footer-col">
+                    <h4 data-i18n="footer_links_lbl">QUICK LINKS</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                        <li><a href="products.html" data-i18n="nav_products">Products</a></li>
+                        <li><a href="about.html" data-i18n="nav_about">About</a></li>
+                        <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Col 3 -->
+                <div class="footer-col">
+                    <h4 data-i18n="footer_about_lbl">ABOUT US</h4>
+                    <p class="footer-about" data-i18n="footer_about_txt">Nepal's trusted drinking water company — delivering purity and reliability to homes, offices, and businesses across the region.</p>
+                </div>
+            </div>
+            <div class="footer-bottom" data-i18n="footer_copy">
+                &copy; 2025 Rolpa Water. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

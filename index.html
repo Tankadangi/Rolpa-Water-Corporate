@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolpa Water | Pure Hydration</title>
+    <meta name="description" content="Rolpa Water offers premium, crystal clear bottled water with unparalleled purity.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Rolpa Water</div>
+        <ul class="nav-links">
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="products.html" data-i18n="nav_products">Products</a></li>
+            <li><a href="about.html" data-i18n="nav_about">About</a></li>
+            <li><a href="about.html#team" data-i18n="nav_team">Team</a></li>
+            <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+            <li><a href="contact.html" class="btn-primary" data-i18n="nav_quote" style="padding: 0.6rem 1.5rem;">Get a Quote</a></li>
+            <li class="lang-switch" style="margin-left: 1rem; border-left: 1px solid #ccc; padding-left: 1rem;">
+                <a href="#" class="lang-btn" data-lang="en" style="text-decoration: none; color: inherit; font-weight: bold;">EN</a> |
+                <a href="#" class="lang-btn" data-lang="ne" style="text-decoration: none; color: inherit; opacity: 0.6;">ने</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-slate">
+        <div class="container">
+            <h1 class="scroll-animate" data-i18n="hero_title">Pure Water.<br>Pure Trust.</h1>
+            <p class="scroll-animate delay-1" data-i18n="hero_sub">Delivering clean, safe drinking water to the heart of Rolpa and beyond — one bottle at a time.</p>
+            <div class="hero-actions scroll-animate delay-2">
+                <a href="products.html" class="btn-primary" data-i18n="hero_btn_primary">Order Now</a>
+                <a href="about.html" class="btn-secondary" data-i18n="hero_btn_secondary">Learn More</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Trust Banner -->
+    <div class="trust-banner">
+        <div data-i18n="trust_banner_1">100% Pure & Tested</div>
+        <div data-i18n="trust_banner_2">Trusted by Businesses Across Nepal</div>
+        <div data-i18n="trust_banner_3">Fast & Reliable Delivery</div>
+    </div>
+
+    <!-- Commitment Section ("Why Rolpa Water?") -->
+    <section class="section commitment-section">
+        <div class="container" style="max-width: 800px; margin: 0 auto;">
+            <span class="section-label scroll-animate" data-i18n="commitment_lbl">OUR COMMITMENT</span>
+            <h2 class="scroll-animate delay-1" data-i18n="commitment_heading">Why Rolpa Water?</h2>
+            
+            <div class="feat-list">
+                <div class="feat-item scroll-animate">
+                    <div class="feat-num" data-i18n="comm_1_num">01</div>
+                    <div class="feat-text">
+                        <h3 data-i18n="comm_1_ttl">Himalayan Purity</h3>
+                        <p data-i18n="comm_1_desc" style="opacity: 0.9;">Our water is sourced from Nepal's pristine natural reserves and processed under strict quality controls.</p>
+                    </div>
+                </div>
+                <div class="feat-item scroll-animate delay-1">
+                    <div class="feat-num" data-i18n="comm_2_num">02</div>
+                    <div class="feat-text">
+                        <h3 data-i18n="comm_2_ttl">Reliable Supply</h3>
+                        <p data-i18n="comm_2_desc" style="opacity: 0.9;">From single households to large enterprises, we ensure consistent, on-time delivery.</p>
+                    </div>
+                </div>
+                <div class="feat-item scroll-animate delay-2">
+                    <div class="feat-num" data-i18n="comm_3_num">03</div>
+                    <div class="feat-text">
+                        <h3 data-i18n="comm_3_ttl">Trusted Quality</h3>
+                        <p data-i18n="comm_3_desc" style="opacity: 0.9;">Every batch is tested and certified — because your health and trust matter most.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products & Services -->
+    <section class="section bg-white">
+        <div class="container">
+            <span class="section-label scroll-animate" data-i18n="products_lbl">WHAT WE OFFER</span>
+            <h2 class="scroll-animate delay-1" data-i18n="products_heading">Our Products & Services</h2>
+            
+            <div class="products-layout">
+                <!-- Large Image Box -->
+                <div class="product-hero-card scroll-animate" style="background: linear-gradient(to top, rgba(11,45,73,0.9), transparent), url('https://images.unsplash.com/photo-1548839140-29a749e1bc4e?q=80&w=600') center/cover;">
+                    <div class="product-hero-content">
+                        <span class="section-label" style="color: var(--primary);" data-i18n="prod_left_lbl">OUR RANGE</span>
+                        <h3 style="color: white; font-weight: 700; font-size: 1.8rem;" data-i18n="prod_left_ttl">Quality water solutions for every need</h3>
+                    </div>
+                </div>
+                
+                <!-- 4 Cards -->
+                <div class="product-cards-grid">
+                    <div class="prod-card scroll-animate delay-1">
+                        <h3 data-i18n="prod_1_ttl">Packaged Drinking Water</h3>
+                        <p data-i18n="prod_1_desc">Available in multiple sizes for home and office use.</p>
+                    </div>
+                    <div class="prod-card scroll-animate delay-2">
+                        <h3 data-i18n="prod_2_ttl">Bulk Water Supply</h3>
+                        <p data-i18n="prod_2_desc">Reliable bulk delivery for businesses, events, and institutions.</p>
+                    </div>
+                    <div class="prod-card scroll-animate delay-1">
+                        <h3 data-i18n="prod_3_ttl">Water Dispensers</h3>
+                        <p data-i18n="prod_3_desc">Convenient dispenser solutions for offices and commercial spaces.</p>
+                    </div>
+                    <div class="prod-card scroll-animate delay-2">
+                        <h3 data-i18n="prod_4_ttl">Custom Orders</h3>
+                        <p data-i18n="prod_4_desc">Tailored supply agreements for distributors and corporate clients.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advanced Footer -->
+    <footer class="footer-dark">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Col 1 -->
+                <div class="footer-col">
+                    <div class="footer-logo">💧 Rolpa Water</div>
+                    <p class="footer-slogan" data-i18n="footer_slogan">Pure Water. Pure Trust. www.rolpawater.com</p>
+                </div>
+                <!-- Col 2 -->
+                <div class="footer-col">
+                    <h4 data-i18n="footer_links_lbl">QUICK LINKS</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                        <li><a href="products.html" data-i18n="nav_products">Products</a></li>
+                        <li><a href="about.html" data-i18n="nav_about">About</a></li>
+                        <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Col 3 -->
+                <div class="footer-col">
+                    <h4 data-i18n="footer_about_lbl">ABOUT US</h4>
+                    <p class="footer-about" data-i18n="footer_about_txt">Nepal's trusted drinking water company — delivering purity and reliability to homes, offices, and businesses across the region.</p>
+                </div>
+            </div>
+            <div class="footer-bottom" data-i18n="footer_copy">
+                &copy; 2025 Rolpa Water. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
